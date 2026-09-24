@@ -60,8 +60,11 @@ Tips:
   the beat. REAPER compensates for this automatically on playback and render. Turn it
   off while recording live through the track. Hits can then only be delayed, never
   moved early.
-- To print the humanization into the MIDI itself, use REAPER's action
-  *Item: Apply track/take FX to items as new take (MIDI output)*.
+- To print the humanization into the MIDI itself, bypass the drum instrument
+  temporarily, then right-click the MIDI item and choose *Apply track/take FX to items
+  as new take (MIDI output)*. Most drum instruments don't pass MIDI on, so bypassing
+  lets the humanized notes reach the end of the chain. The original stays as the
+  previous take.
 - The plugin passes all other MIDI (hi-hat pedal CCs, pitch bend, ...) through unchanged.
 
 ## Controls
